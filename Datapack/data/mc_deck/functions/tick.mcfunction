@@ -1,3 +1,6 @@
+# Run config ticks
+execute if score anvil_repairing config matches 1.. run function mc_deck:anvil_repairing
+
 # Recieve Daily Gift
 execute store result score time Debug run time query daytime
 execute if score time Debug matches 1000 run function mc_deck:daily_gift
@@ -23,4 +26,5 @@ execute as @a[tag=inBattle] run bossbar set card_health visible true
 scoreboard players add @a player_card_hp 0
 
 # Stop Souls/Hp from going above max
-execute as @a if score @s player_card_hp
+execute as @a if score @s player_card_hp matches 151.. run scoreboard players set @s player_card_hp 150
+execute as @a if score @s player_souls matches 151.. run scoreboard players set @s player_souls 150

@@ -21,6 +21,12 @@ scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stic
 # Setup Daily Rubies Scoreboard
 scoreboard objectives add daily_rubies dummy
 
+# Setup config scoreboards
+scoreboard objectives add config dummy
+scoreboard players add anvil_repairing config 0
+
+function mc_deck:config
+
 # Install Card Stats
 function #mc_deck:install_card_stats
 
