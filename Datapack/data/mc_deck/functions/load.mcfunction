@@ -24,6 +24,11 @@ scoreboard objectives add daily_rubies dummy
 # Setup config scoreboards
 scoreboard objectives add config dummy
 scoreboard players add anvil_repairing config 0
+scoreboard players add set_home config 0
+
+# Set home
+execute if score set_home config matches 1.. run function mc_deck:sethome/add_triggers
+execute if score set_home config matches 0 run function mc_deck:sethome/remove_triggers
 
 function mc_deck:config
 

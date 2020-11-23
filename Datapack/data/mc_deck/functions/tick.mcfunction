@@ -28,3 +28,6 @@ scoreboard players add @a player_card_hp 0
 # Stop Souls/Hp from going above max
 execute as @a if score @s player_card_hp matches 151.. run scoreboard players set @s player_card_hp 150
 execute as @a if score @s player_souls matches 151.. run scoreboard players set @s player_souls 150
+
+# Set Home
+execute as @a[scores={sethome=1..}] run function mc_deck:sethome/add_players
