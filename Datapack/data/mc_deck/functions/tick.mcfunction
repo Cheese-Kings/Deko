@@ -31,3 +31,6 @@ execute as @a if score @s player_souls matches 151.. run scoreboard players set 
 
 # Set Home
 execute as @a[scores={sethome=1..}] run function mc_deck:sethome/add_players
+
+# Repair hammer scores
+scoreboard players add @e[tag=repair_hammer] anvil_delay 100
