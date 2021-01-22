@@ -4,3 +4,5 @@ scoreboard players set skeleton cardAttack 12
 scoreboard players set skeleton cardHealth 20
 # ID
 scoreboard players set skeleton cardID 4
+# Defence
+scoreboard players set card cardDefence 7

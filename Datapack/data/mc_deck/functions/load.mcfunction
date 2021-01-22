@@ -2,6 +2,7 @@
 scoreboard objectives add cardAttack dummy
 scoreboard objectives add cardHealth dummy
 scoreboard objectives add cardID dummy
+scoreboard objectives add cardDefence dummy
 
 # Setup Debug Scoreboard
 scoreboard objectives add Debug dummy
