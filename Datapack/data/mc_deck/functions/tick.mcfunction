@@ -29,8 +29,8 @@ scoreboard players add @a player_card_hp 0
 execute as @a if score @s player_card_hp matches 151.. run scoreboard players set @s player_card_hp 150
 execute as @a if score @s player_souls matches 151.. run scoreboard players set @s player_souls 150
 
-# Set Home
-execute as @a[scores={sethome=1..}] run function mc_deck:sethome/add_players
+# Carrot people
+scoreboard players add @a click_carrot 0
 
-# Repair hammer scores
-scoreboard players add @e[tag=repair_hammer] anvil_delay 100
+# Did you just right click that?
+execute at @a[scores={click_carrot=1..}] run function #mc_deck:detect_card

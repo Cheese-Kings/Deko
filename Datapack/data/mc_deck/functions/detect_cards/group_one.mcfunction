@@ -6,7 +6,7 @@
 # (1) Creeper
 execute at @a if data entity @p SelectedItem.tag.card_creeper run function mc_deck:card_info/creeper
 
-# (1) Creeper
+# e
 execute at @a if data entity @p SelectedItem.tag.card_creeper[7] run say Frog is pog
 
 # (2) Charged Creeper

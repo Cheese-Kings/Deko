@@ -16,7 +16,7 @@ scoreboard players add current_version_minor Debug 0
 scoreboard players set current_version_major Debug 0
 scoreboard players set current_version_minor Debug 1
 
-# Setup Click Carrot Scoreboard [Currently Not Required, Saving For Later Feature]
+# Setup Click Carrot Scoreboard
 scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
 
 # Setup Daily Rubies Scoreboard
