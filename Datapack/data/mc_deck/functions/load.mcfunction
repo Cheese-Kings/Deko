@@ -5,57 +5,39 @@ scoreboard objectives add cardID dummy
 scoreboard objectives add cardDefence dummy
 
 # Setup Debug Scoreboard
-scoreboard objectives add Debug dummy
-scoreboard players add first_time_load_completed Debug 0
-scoreboard players add time Debug 0
-scoreboard players add day_count Debug 0
+execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add Debug dummy
+execute if score first_time_load_completed Debug matches 0 run scoreboard players add first_time_load_completed Debug 0
+execute if score first_time_load_completed Debug matches 0 run scoreboard players add time Debug 0
+execute if score first_time_load_completed Debug matches 0 run scoreboard players add day_count Debug 0
 # Current Version
-scoreboard players add current_version_major Debug 0
-scoreboard players add current_version_minor Debug 0
+execute if score first_time_load_completed Debug matches 0 run scoreboard players add current_version_major Debug 0
+execute if score first_time_load_completed Debug matches 0 run scoreboard players add current_version_minor Debug 0
 # Set Datapack Version
 scoreboard players set current_version_major Debug 0
 scoreboard players set current_version_minor Debug 1
 
 # Setup Click Carrot Scoreboard
-scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
+execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
 
 # Setup Daily Rubies Scoreboard
-scoreboard objectives add daily_rubies dummy
-
-# Setup config scoreboards
-scoreboard objectives add config dummy
-scoreboard players add anvil_repairing config 0
-scoreboard players add set_home config 0
-
-# Setup anvil repairing delay scoreboard
-scoreboard objectives add anvil_delay dummy
-
-# Set home
-execute if score set_home config matches 1.. run function mc_deck:sethome/add_triggers
-execute if score set_home config matches 0 run function mc_deck:sethome/remove_triggers
-
-function mc_deck:config
+execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add daily_rubies dummy
 
 # Install Card Stats
 function #mc_deck:install_card_stats
 
 # Setup Synergy Bossbar/Scoreboard
-bossbar add souls ["",{"text":"-[=@=/","color":"yellow"},{"text":" SYNERGY","color":"light_purple"},{"text":" \\=@=]-","color":"yellow"}]
-bossbar set souls color blue
-bossbar set souls max 150
-bossbar set souls style progress
-scoreboard objectives add player_souls dummy
-
+execute if score first_time_load_completed Debug matches 0 run bossbar add souls ["",{"text":"-[=@=/","color":"yellow"},{"text":" SYNERGY","color":"light_purple"},{"text":" \\=@=]-","color":"yellow"}]
+execute if score first_time_load_completed Debug matches 0 run bossbar set souls color blue
+execute if score first_time_load_completed Debug matches 0 run bossbar set souls max 150
+execute if score first_time_load_completed Debug matches 0 run bossbar set souls style progress
+execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add player_souls dummy
 
 # Setup Card Health Bossbar/Scoreboard
-bossbar add card_health ["",{"text":"-[=@=/","color":"yellow"},{"text":" CARD HEALTH","color":"red"},{"text":" \\=@=]-","color":"yellow"}]
-bossbar set card_health color red
-bossbar set card_health max 150
-bossbar set card_health style progress
-scoreboard objectives add player_card_hp dummy
-
-# Run card detection
-execute if score first_time_load_completed Debug matches 0 run schedule function #mc_deck:detect_card 5t
+execute if score first_time_load_completed Debug matches 0 run bossbar add card_health ["",{"text":"-[=@=/","color":"yellow"},{"text":" CARD HEALTH","color":"red"},{"text":" \\=@=]-","color":"yellow"}]
+execute if score first_time_load_completed Debug matches 0 run bossbar set card_health color red
+execute if score first_time_load_completed Debug matches 0 run bossbar set card_health max 150
+execute if score first_time_load_completed Debug matches 0 run bossbar set card_health style progress
+execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add player_card_hp dummy
 
 # Installation Completion
 tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" MC Deck","color":"gold"},{"text":" datapack is loaded!","color":"aqua"}]
