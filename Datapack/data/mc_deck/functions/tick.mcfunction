@@ -34,3 +34,4 @@ scoreboard players add @a click_carrot 0
 
 # Did you just right click that?
 execute at @a[scores={click_carrot=1..}] run function #mc_deck:detect_card
+execute at @a[scores={click_carrot=1..}] run scoreboard players set @p click_carrot 0

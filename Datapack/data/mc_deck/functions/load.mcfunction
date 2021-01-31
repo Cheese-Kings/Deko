@@ -5,22 +5,22 @@ scoreboard objectives add cardID dummy
 scoreboard objectives add cardDefence dummy
 
 # Setup Debug Scoreboard
-execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add Debug dummy
-execute if score first_time_load_completed Debug matches 0 run scoreboard players add first_time_load_completed Debug 0
-execute if score first_time_load_completed Debug matches 0 run scoreboard players add time Debug 0
-execute if score first_time_load_completed Debug matches 0 run scoreboard players add day_count Debug 0
+scoreboard objectives add Debug dummy
+scoreboard players add first_time_load_completed Debug 0
+scoreboard players add time Debug 0
+scoreboard players add day_count Debug 0
 # Current Version
-execute if score first_time_load_completed Debug matches 0 run scoreboard players add current_version_major Debug 0
-execute if score first_time_load_completed Debug matches 0 run scoreboard players add current_version_minor Debug 0
+scoreboard players add current_version_major Debug 0
+scoreboard players add current_version_minor Debug 0
 # Set Datapack Version
 scoreboard players set current_version_major Debug 0
 scoreboard players set current_version_minor Debug 1
 
 # Setup Click Carrot Scoreboard
-execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
 
 # Setup Daily Rubies Scoreboard
-execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add daily_rubies dummy
+scoreboard objectives add daily_rubies dummy
 
 # Install Card Stats
 function #mc_deck:install_card_stats

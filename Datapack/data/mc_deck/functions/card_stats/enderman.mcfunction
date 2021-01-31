@@ -5,4 +5,4 @@ scoreboard players set enderman cardHealth 40
 # ID
 scoreboard players set enderman cardID 6
 # Defence
-scoreboard players set card cardDefence 12
+scoreboard players set enderman cardDefence 12

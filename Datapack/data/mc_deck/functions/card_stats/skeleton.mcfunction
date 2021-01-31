@@ -5,4 +5,4 @@ scoreboard players set skeleton cardHealth 20
 # ID
 scoreboard players set skeleton cardID 4
 # Defence
-scoreboard players set card cardDefence 7
+scoreboard players set skeleton cardDefence 7
