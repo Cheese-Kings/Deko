@@ -26,18 +26,18 @@ scoreboard objectives add daily_rubies dummy
 function #mc_deck:install_card_stats
 
 # Setup Synergy Bossbar/Scoreboard
-execute if score first_time_load_completed Debug matches 0 run bossbar add souls ["",{"text":"-[=@=/","color":"yellow"},{"text":" SYNERGY","color":"light_purple"},{"text":" \\=@=]-","color":"yellow"}]
-execute if score first_time_load_completed Debug matches 0 run bossbar set souls color blue
-execute if score first_time_load_completed Debug matches 0 run bossbar set souls max 150
-execute if score first_time_load_completed Debug matches 0 run bossbar set souls style progress
-execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add player_souls dummy
+bossbar add souls ["",{"text":"-[=@=/","color":"yellow"},{"text":" SYNERGY","color":"light_purple"},{"text":" \\=@=]-","color":"yellow"}]
+bossbar set souls color blue
+bossbar set souls max 150
+bossbar set souls style progress
+scoreboard objectives add player_souls dummy
 
 # Setup Card Health Bossbar/Scoreboard
-execute if score first_time_load_completed Debug matches 0 run bossbar add card_health ["",{"text":"-[=@=/","color":"yellow"},{"text":" CARD HEALTH","color":"red"},{"text":" \\=@=]-","color":"yellow"}]
-execute if score first_time_load_completed Debug matches 0 run bossbar set card_health color red
-execute if score first_time_load_completed Debug matches 0 run bossbar set card_health max 150
-execute if score first_time_load_completed Debug matches 0 run bossbar set card_health style progress
-execute if score first_time_load_completed Debug matches 0 run scoreboard objectives add player_card_hp dummy
+bossbar add card_health ["",{"text":"-[=@=/","color":"yellow"},{"text":" CARD HEALTH","color":"red"},{"text":" \\=@=]-","color":"yellow"}]
+bossbar set card_health color red
+bossbar set card_health max 150
+bossbar set card_health style progress
+scoreboard objectives add player_card_hp dummy
 
 # Installation Completion
 tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" MC Deck","color":"gold"},{"text":" datapack is loaded!","color":"aqua"}]

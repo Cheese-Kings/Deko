@@ -10,7 +10,7 @@ scoreboard players add @a daily_rubies 0
 execute as @a if score @s daily_rubies matches 1.. run function debug:give_item/ruby
 execute as @a if score @s daily_rubies matches 1.. run scoreboard players remove @s daily_rubies 1
 
-# Day Counter [Currently Useless]
+# Day Counter
 execute store result score day_count Debug run time query day
 
 # Display Synergy
