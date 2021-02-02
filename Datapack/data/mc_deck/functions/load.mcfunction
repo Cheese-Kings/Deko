@@ -30,7 +30,8 @@ bossbar set card_health style progress
 scoreboard objectives add player_card_hp dummy
 
 # arenaID thingy
-scoreboard objectives
+scoreboard objectives add arenaID dummy
+scoreboard players add currentMax arenaID 0
 
 # Installation Completion
 tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" MC Deck","color":"gold"},{"text":" datapack is loaded!","color":"aqua"}]

@@ -12,7 +12,12 @@
   "parent": "mc_deck:root",
   "criteria": {
     "trigger": {
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "item": "minecraft:carrot_on_a_stick",
+          "nbt": "{mc_deck_card:1}"
+        }]}
     }
   }
 }
