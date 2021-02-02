@@ -1,0 +1,2 @@
+# Summon player zones
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["mc_deck.player_zone", "global.ignore", "global.ignore.pos"], mc_deck.arenaID:0}

@@ -29,6 +29,9 @@ bossbar set card_health max 150
 bossbar set card_health style progress
 scoreboard objectives add player_card_hp dummy
 
+# arenaID thingy
+scoreboard objectives
+
 # Installation Completion
 tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" MC Deck","color":"gold"},{"text":" datapack is loaded!","color":"aqua"}]
 execute if score first_time_load_completed Debug matches 0 run tellraw @a [{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" First time load completed!","color":"green"}]
