@@ -1,12 +1,16 @@
 {
   "display": {
-    "title": "MASTRIO",
-    "description": "I am me how cool is that?",
+    "title": "Mc Deck",
+    "description": "Card game in Minecraft Pog",
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:12}"
+    },
     "background": "minecraft:textures/block/black_concrete_powder.png",
     "show_toast": false,
     "announce_to_chat": false
   },
-  "parent": "global:root",
+  "parent": "global:<namespace>",
   "criteria": {
     "trigger": {
       "trigger": "minecraft:tick"
