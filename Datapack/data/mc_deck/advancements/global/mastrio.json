@@ -1,0 +1,15 @@
+{
+  "display": {
+    "title": "MASTRIO",
+    "description": "I am me how cool is that?",
+    "background": "minecraft:textures/block/black_concrete_powder.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "global:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

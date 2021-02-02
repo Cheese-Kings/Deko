@@ -51,8 +51,27 @@ cls
 rem Create commands
 echo Generating commands...
 echo.
-
-rem poggers
-
+echo You will be given a series of commands and instructions on where in the datapack to put them, yay
+echo.
 pause
 cls
+
+rem Detect Cards
+echo Put the following in one of the groups of the detect_cards subfolder
+echo.
+echo # (7) %cardName%
+echo execute at @a if data entity @p SelectedItem.tag.card_%cardCodeName% run function mc_deck:card_info/%cardCodeName%
+echo.
+pause
+cls
+
+rem Taggy the Tagging Tag
+echo Put the following in the install_card_stats function Tag
+echo.
+echo "mc_deck:card_stats/%cardCodeName%"
+echo.
+pause
+cls
+
+rem WOW the end
+echo You did it yay woo you added a new card very cool pog

@@ -19,18 +19,8 @@ scoreboard players set current_version_minor Debug 1
 # Setup Click Carrot Scoreboard
 scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick
 
-# Setup Daily Rubies Scoreboard
-scoreboard objectives add daily_rubies dummy
-
 # Install Card Stats
 function #mc_deck:install_card_stats
-
-# Setup Synergy Bossbar/Scoreboard
-bossbar add souls ["",{"text":"-[=@=/","color":"yellow"},{"text":" SYNERGY","color":"light_purple"},{"text":" \\=@=]-","color":"yellow"}]
-bossbar set souls color blue
-bossbar set souls max 150
-bossbar set souls style progress
-scoreboard objectives add player_souls dummy
 
 # Setup Card Health Bossbar/Scoreboard
 bossbar add card_health ["",{"text":"-[=@=/","color":"yellow"},{"text":" CARD HEALTH","color":"red"},{"text":" \\=@=]-","color":"yellow"}]
