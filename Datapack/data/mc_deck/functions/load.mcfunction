@@ -9,6 +9,7 @@ scoreboard objectives add Debug dummy
 scoreboard players add first_time_load_completed Debug 0
 scoreboard players add time Debug 0
 scoreboard players add day_count Debug 0
+scoreboard players add first_arena_placed Debug 0
 # Current Version
 scoreboard players add current_version_major Debug 0
 scoreboard players add current_version_minor Debug 0
