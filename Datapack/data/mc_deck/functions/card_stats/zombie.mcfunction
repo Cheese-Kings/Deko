@@ -1,8 +1,8 @@
 # Attack
-scoreboard players set zombie cardAttack 13
+scoreboard players set zombie cardAttack 0
 # Health
-scoreboard players set zombie cardHealth 20
+scoreboard players set zombie cardHealth 0
 # ID
-scoreboard players set zombie cardID 1
+scoreboard players set zombie cardID 0
 # Defence
-scoreboard players set zombie cardDefence 7
+scoreboard players set zombie cardDefence 0

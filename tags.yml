@@ -1,0 +1,33 @@
+############################################
+#                                          #
+#  A list of all the /tag tags in Mc Deck  #
+#                                          #
+############################################
+---
+mc_deck: Main tag
+  battle: Battle related tags
+    in_battle: The player is in a battle
+    arena: Arena related tags
+      center: The center of the arena
+      player_zone1: The first player zone in an arena
+      player_zone2: The second player zone in an arena
+---
+
+###########################################
+#                                         #
+#  A list of all the NBT tags in Mc Deck  #
+#                                         #
+###########################################
+---
+mcDeck: Main Tag
+  card: Cards
+    chargedCreeper: Charged Creeper Card
+    creeper: Creeper Card
+    drowned: Drowned Card
+    enderman: Enderman Card
+    pillager: Pillager Card
+    skeleton: Skeleton Card
+    zombie: Zombie Card
+  item: Items
+    ruby: Ruby Item
+---

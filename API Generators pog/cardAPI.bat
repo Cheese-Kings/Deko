@@ -42,7 +42,7 @@ echo tellraw @p ["",{"text":"\n"},{"text":"~~~~~~~~","color":"aqua"},{"text":" %
 rem Give Card
 cd ../give_card
 (
-echo give @p minecraft:carrot_on_a_stick{CustomModelData:1%cardID%,card_%cardCodeName%:1,display:{Name:'[{"text":"%cardName% Card","italic":false}]',Lore:['[{"text":"","italic":false}]','[{"text":"%cardRarity%","italic":false,"color":"%rarityColour%"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Mc Deck","italic":true,"color":"blue"}]']}} 1
+echo give @p minecraft:carrot_on_a_stick{CustomModelData:1%cardID%,mcDeck_card_%cardCodeName%:1,display:{Name:'[{"text":"%cardName% Card","italic":false}]',Lore:['[{"text":"","italic":false}]','[{"text":"%cardRarity%","italic":false,"color":"%rarityColour%"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Mc Deck","italic":true,"color":"blue"}]']}} 1
 )> %cardCodeName%.mcfunction
 
 pause
@@ -60,7 +60,7 @@ rem Detect Cards
 echo Put the following in one of the groups of the detect_cards subfolder
 echo.
 echo # (7) %cardName%
-echo execute at @a if data entity @p SelectedItem.tag.card_%cardCodeName% run function mc_deck:card_info/%cardCodeName%
+echo execute at @a if data entity @p SelectedItem.tag.mcDeck_card_%cardCodeName% run function mc_deck:card_info/%cardCodeName%
 echo.
 pause
 cls

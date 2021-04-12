@@ -1,7 +1,7 @@
 {
   "display": {
     "title": "Mc Deck",
-    "description": "Card game in Minecraft Pog",
+    "description": "A card game in Minecraft\n---\nContributors:\n- MASTRIO (Coder boi)\n- Pman (Art boi)",
     "icon": {
       "item": "minecraft:carrot_on_a_stick",
       "nbt": "{CustomModelData:12}"
