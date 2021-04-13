@@ -1,3 +1,10 @@
+##########################################
+#                                        #
+#    Charged Creeper Stats Function      #
+# The Stats for the Charged Creeper Card #
+#                                        #
+##########################################
+
 # Attack
 scoreboard players set charged_creeper cardAttack 0
 # Health

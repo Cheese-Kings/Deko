@@ -1,3 +1,10 @@
+##########################################
+#                                        #
+#    Drowned Stats Function      #
+# The Stats for the Drowned Card #
+#                                        #
+##########################################
+
 # Attack
 scoreboard players set drowned cardAttack 0
 # Health

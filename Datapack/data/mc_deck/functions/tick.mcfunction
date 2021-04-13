@@ -1,5 +1,9 @@
-# Day Counter [Currently Useless]
-execute store result score day_count Debug run time query day
+######################################
+#                                    #
+#           Tick Function            #
+#        Runs every game tick        #
+#                                    #
+######################################
 
 # Display Card Health
 bossbar set card_health players @a

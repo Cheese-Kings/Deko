@@ -1,3 +1,10 @@
+########################################
+#                                      #
+#            Load Function             #
+#       Runs when /reload is run       #
+#                                      #
+########################################
+
 # Setup Card Data Objectives
 scoreboard objectives add cardAttack dummy
 scoreboard objectives add cardHealth dummy
@@ -10,12 +17,16 @@ scoreboard players add first_time_load_completed Debug 0
 scoreboard players add time Debug 0
 scoreboard players add day_count Debug 0
 scoreboard players add first_arena_placed Debug 0
-# Current Version
-scoreboard players add current_version_major Debug 0
-scoreboard players add current_version_minor Debug 0
-# Set Datapack Version
-scoreboard players set current_version_major Debug 0
-scoreboard players set current_version_minor Debug 1
+
+# Setup Version Scoreboard
+scoreboard objectives add Version dummy
+scoreboard players add major Version 0
+scoreboard players add minor Version 0
+scoreboard players add patch Version 0
+# Set Version
+scoreboard players set major Version 0
+scoreboard players set minor Version 1
+scoreboard players set patch Version 0
 
 # Setup Click Carrot Scoreboard
 scoreboard objectives add click_carrot minecraft.used:minecraft.carrot_on_a_stick

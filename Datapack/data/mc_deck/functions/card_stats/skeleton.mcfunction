@@ -1,3 +1,10 @@
+###################################
+#                                 #
+#    Skeleton Stats Function      #
+# The Stats for the Skeleton Card #
+#                                 #
+###################################
+
 # Attack
 scoreboard players set skeleton cardAttack 0
 # Health

@@ -1,3 +1,10 @@
+########################
+#                      #
+#    Reset Function    #
+# Resets the Boss Bars #
+#                      #
+########################
+
 bossbar set card_health value 0
 scoreboard players reset @s player_card_hp
 

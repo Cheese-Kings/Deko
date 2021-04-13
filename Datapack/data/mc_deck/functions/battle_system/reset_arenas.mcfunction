@@ -1,3 +1,10 @@
+#############################
+#                           #
+#   Reset Arena Function    #
+# Deletes all of the Arenas #
+#                           #
+#############################
+
 # Reset ArenaID scoreboard
 scoreboard players set currentMax arenaID 0
 

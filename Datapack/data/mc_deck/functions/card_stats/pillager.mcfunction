@@ -1,3 +1,10 @@
+###################################
+#                                 #
+#    Pillager Stats Function      #
+# The Stats for the Pillager Card #
+#                                 #
+###################################
+
 # Attack
 scoreboard players set pillager cardAttack 0
 # Health

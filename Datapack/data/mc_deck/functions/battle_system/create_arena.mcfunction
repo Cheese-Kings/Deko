@@ -1,3 +1,10 @@
+#########################
+#                       #
+# Create Arena Function #
+#   Creates the Arena   #
+#                       #
+#########################
+
 # Summon center
 summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["mc_deck.battle.arena.center", "global.ignore", "global.ignore.pos"]}
 setblock ~ ~-1 ~ minecraft:gold_block

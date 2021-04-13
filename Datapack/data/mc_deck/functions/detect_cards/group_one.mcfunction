@@ -1,7 +1,12 @@
-####################################
-## Group 1:                       ##
-## Cards 1-15                     ##
-####################################
+##########################################################
+#                                                        #
+#                  Detect Cards Function                 #
+# Detects if you right click a card and shows it's stats #
+#                                                        #
+#  Group 1:                                              #
+#  Cards 1-15                                            #
+#                                                        #
+##########################################################
 
 # (1) Creeper
 execute at @a if data entity @p SelectedItem.tag.mcDeck_card_creeper run function mc_deck:card_info/creeper

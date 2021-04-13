@@ -1,3 +1,10 @@
+#################################
+#                               #
+#    Zombie Stats Function      #
+# The Stats for the Zombie Card #
+#                               #
+#################################
+
 # Attack
 scoreboard players set zombie cardAttack 0
 # Health

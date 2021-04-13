@@ -1,3 +1,10 @@
+###################################
+#                                 #
+#    Enderman Stats Function      #
+# The Stats for the Enderman Card #
+#                                 #
+###################################
+
 # Attack
 scoreboard players set enderman cardAttack 0
 # Health

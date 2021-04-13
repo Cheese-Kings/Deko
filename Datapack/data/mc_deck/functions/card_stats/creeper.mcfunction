@@ -1,3 +1,10 @@
+##################################
+#                                #
+#    Creeper Stats Function      #
+# The Stats for the Creeper Card #
+#                                #
+##################################
+
 # Attack
 scoreboard players set creeper cardAttack 0
 # Health
