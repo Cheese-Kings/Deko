@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "deko:cards/backgrounds/main",
+    "layer1": "deko:cards/rarities/common",
+    "layer2": "deko:cards/icons/zombie"
+  }
+}

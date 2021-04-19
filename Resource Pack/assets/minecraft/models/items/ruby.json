@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-      "layer0": "minecraft:items/ruby"
+      "layer0": "deko:items/ruby"
     }
   }
