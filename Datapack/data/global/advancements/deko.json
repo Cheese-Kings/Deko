@@ -1,0 +1,19 @@
+{
+  "display": {
+    "title": "Deko",
+    "description": "A card game in Minecraft\n---\nContributors:\n- MASTRIO (Coder boi)\n- Riyu (Art boi)",
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:12}"
+    },
+    "background": "minecraft:textures/block/black_concrete_powder.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "global:mastrio",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

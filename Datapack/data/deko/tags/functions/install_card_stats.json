@@ -1,0 +1,11 @@
+{
+	"values": [
+		"deko:card_stats/creeper",
+		"deko:card_stats/charged_creeper",
+		"deko:card_stats/drowned",
+		"deko:card_stats/enderman",
+		"deko:card_stats/pillager",
+		"deko:card_stats/skeleton",
+		"deko:card_stats/zombie"
+	]
+}

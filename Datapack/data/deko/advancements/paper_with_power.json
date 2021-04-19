@@ -1,0 +1,23 @@
+{
+  "display": {
+    "title": "Paper With Power",
+    "description": "Get your first Deko card",
+    "icon": {
+      "item": "minecraft:paper"
+    },
+    "background": "minecraft:textures/block/white_wool.png",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "deko:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "item": "minecraft:carrot_on_a_stick",
+          "nbt": "{deko_card:1}"
+        }]}
+    }
+  }
+}

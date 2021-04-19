@@ -1,10 +1,10 @@
-############################################
-#                                          #
-#  A list of all the /tag tags in Mc Deck  #
-#                                          #
-############################################
+#########################################
+#                                       #
+#  A list of all the /tag tags in Deko  #
+#                                       #
+#########################################
 ---
-mc_deck: Main tag
+deko: Main tag
   battle: Battle related tags
     in_battle: The player is in a battle
     arena: Arena related tags
@@ -13,13 +13,13 @@ mc_deck: Main tag
       player_zone2: The second player zone in an arena
 ---
 
-###########################################
-#                                         #
-#  A list of all the NBT tags in Mc Deck  #
-#                                         #
-###########################################
+########################################
+#                                      #
+#  A list of all the NBT tags in Deko  #
+#                                      #
+########################################
 ---
-mcDeck: Main Tag
+deko: Main Tag
   card: Cards
     chargedCreeper: Charged Creeper Card
     creeper: Creeper Card
