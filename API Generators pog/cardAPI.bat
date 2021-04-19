@@ -1,3 +1,8 @@
+
+
+rem - TODO: Make this work with the new update
+
+
 @echo off
 
 rem Title etc.
