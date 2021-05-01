@@ -45,6 +45,10 @@ scoreboard objectives add player_card_hp dummy
 scoreboard objectives add arenaID dummy
 scoreboard players add currentMax arenaID 0
 
+# Start the 'slow tick' function loop
+schedule clear deko:slow_tick
+schedule function deko:slow_tick 1s
+
 # Installation Completion
 tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" Deko","color":"gold"},{"text":" datapack is loaded!","color":"aqua"}]
 execute if score first_time_load_completed Debug matches 0 run tellraw @a [{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" First time load completed!","color":"green"}]

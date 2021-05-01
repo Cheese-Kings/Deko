@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "deko:cards/backgrounds/main",
-    "layer1": "deko:cards/rarities/rare",
-    "layer2": "deko:cards/icons/enderman"
+    "layer0": "cards/backgrounds/main",
+    "layer1": "cards/rarities/rare",
+    "layer2": "cards/icons/enderman"
   }
 }
