@@ -12,4 +12,4 @@ scoreboard players set enderman cardHealth 0
 # Defence
 scoreboard players set enderman cardDefence 0
 # ID
-scoreboard players set enderman cardID 0
+scoreboard players set enderman cardID 6
