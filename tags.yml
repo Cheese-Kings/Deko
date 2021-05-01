@@ -22,6 +22,7 @@ deko: # Main tag
 ########################################
 ---
 deko: # Main Tag
+  isCard # Is the item a card
   card: # Cards
     chargedCreeper # Charged Creeper Card
     creeper # Creeper Card
