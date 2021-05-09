@@ -1,0 +1,1 @@
+clear @a zombie_horse_spawn_egg 1
